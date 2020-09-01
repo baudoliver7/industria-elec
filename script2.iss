@@ -47,3 +47,5 @@ Filename: "{app}\Industria Elec v1.0.exe"; Description: "{cm:LaunchProgram,Indus
 
 
 
+
+
