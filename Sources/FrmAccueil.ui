@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmAccueil</class>
+ <widget class="QWidget" name="FrmAccueil">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>601</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/images/background-app.jpg);</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Page de démarrage</string>
+      </attribute>
+      <widget class="QCommandLinkButton" name="btn_new_mt">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>170</y>
+         <width>371</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Créer une nouvelle installation par la méthode théorique</string>
+       </property>
+       <property name="icon">
+        <iconset resource="boutons.qrc">
+         <normaloff>:/images/new_mt.png</normaloff>:/images/new_mt.png</iconset>
+       </property>
+      </widget>
+      <widget class="QCommandLinkButton" name="btn_new_mi">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>220</y>
+         <width>371</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Créer une nouvelle installation par la méthode industrielle</string>
+       </property>
+       <property name="icon">
+        <iconset resource="boutons.qrc">
+         <normaloff>:/images/new_mi.png</normaloff>:/images/new_mi.png</iconset>
+       </property>
+      </widget>
+      <widget class="QCommandLinkButton" name="btn_open_project">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>270</y>
+         <width>371</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ouvrir un projet</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/images/open_2.png</normaloff>:/images/open_2.png</iconset>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="boutons.qrc"/>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

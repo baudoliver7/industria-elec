@@ -1,0 +1,14 @@
+INPUT(
+./release\ComposantsInstallationElect.o
+./release\Tableau.o
+./release\Recepteur.o
+./release\installation.o
+./release\Composant.o
+./release\Cable.o
+./release\GroupeDeComposants.o
+./release\InstallationGraphicDriver.o
+./release\Local.o
+./release\Transformateur.o
+./release\moc_InstallationGraphicDriver.o
+./release\qrc_images.o
+);

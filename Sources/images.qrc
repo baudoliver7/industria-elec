@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/habitat.jpeg</file>
+        <file>images/logo.png</file>
+        <file>images/moteur_photo.png</file>
+        <file>images/background-app.jpg</file>
+        <file>images/new_mi_2.png</file>
+        <file>images/new_mt2.png</file>
+        <file>images/open_2.png</file>
+        <file>images/autre récepteur.png</file>
+        <file>images/Chauffage.png</file>
+        <file>images/climatiseur.png</file>
+        <file>images/eclairage.png</file>
+        <file>images/Local_ecl.png</file>
+        <file>images/moteur.png</file>
+        <file>images/prise de courant.png</file>
+        <file>images/TD.png</file>
+        <file>images/TER.png</file>
+        <file>images/TGBT.png</file>
+        <file>images/TS.png</file>
+        <file>images/fleche.PNG</file>
+        <file>images/gomme.png</file>
+        <file>images/liaison.png</file>
+        <file>images/transfo.png</file>
+        <file>images/td_icon.png</file>
+        <file>images/ter_icon.png</file>
+        <file>images/ts_icon.png</file>
+    </qresource>
+</RCC>

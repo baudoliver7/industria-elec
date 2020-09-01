@@ -1,0 +1,14 @@
+INPUT(
+./debug\ComposantsInstallationElect.o
+./debug\Tableau.o
+./debug\Recepteur.o
+./debug\installation.o
+./debug\Composant.o
+./debug\Cable.o
+./debug\GroupeDeComposants.o
+./debug\InstallationGraphicDriver.o
+./debug\Local.o
+./debug\Transformateur.o
+./debug\moc_InstallationGraphicDriver.o
+./debug\qrc_images.o
+);

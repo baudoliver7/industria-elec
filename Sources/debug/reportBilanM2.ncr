@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.10.0" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+    </options>
+    <datasources>
+        <datasource id="cds0" type="custom" openRole="begin" source="static"></datasource>
+        <datasource id="cds1" type="custom" openRole="begin" source="static"></datasource>
+    </datasources>
+    <variables/>
+    <pageheader id="PH" height="11.642">
+        <label id="5ZY4H" zValue="0" posX="4.762" posY="1.587" width="57.679" height="7.673" fontName="Arial" fontSize="18" fontWeight="bold" forecolor="#000000">Bilan de puissance</label>
+    </pageheader>
+    <pagefooter id="PF" height="16.404">
+        <label id="N4SFS" zValue="0" posX="1.587" posY="9.525" width="47.625" height="4.762" fontName="Arial" fontSize="10" forecolor="#000000">Industria Elec 2013</label>
+        <field id="IA5MB" zValue="1" posX="150.812" posY="9.525" width="14.287" height="4.762" fontName="Arial" fontSize="10" forecolor="#000000" type="txt" ftype="sys" arg="">pageno</field>
+        <field id="XYM9V" zValue="3" posX="131.762" posY="1.587" width="33.337" height="4.762" fontName="Arial" fontSize="10" forecolor="#000000" type="txt" ftype="sys" arg="">date</field>
+        <label id="L2XVD" zValue="4" posX="117.475" posY="1.587" width="12.700" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">Fait le </label>
+    </pagefooter>
+    <details>
+        <detail id="Detail1" height="7.938" datasource="cds0">
+            <items>
+                <field id="XAE8E" zValue="0" posX="3.175" posY="1.587" width="22.225" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">designation</field>
+                <field id="V5UBE" zValue="1" posX="28.575" posY="1.587" width="25.400" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">type</field>
+                <field id="PHMQC" zValue="2" posX="55.562" posY="1.587" width="14.287" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">cosphi</field>
+                <field id="Q0ZPQ" zValue="3" posX="73.025" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">pi</field>
+                <field id="Z1U5P" zValue="4" posX="96.837" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">qi</field>
+                <field id="EZ4KH" zValue="5" posX="120.650" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">pu</field>
+                <field id="6KHVE" zValue="6" posX="144.463" posY="1.587" width="22.225" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">qu</field>
+            </items>
+            <groups>
+                <group id="Groupe 0" groupExp="designationdearmoire" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader height="16.933">
+                        <label id="4J1DD" zValue="0" posX="3.175" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" forecolor="#000000">ARMOIRE : </label>
+                        <label id="UPDBL" zValue="1" posX="77.787" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">TYPE : </label>
+                        <field id="4QD8A" zValue="2" posX="26.987" posY="1.587" width="47.625" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">designationdearmoire</field>
+                        <field id="ZU61W" zValue="3" posX="100.012" posY="1.587" width="66.675" height="4.762" fontName="Arial" fontSize="10" type="txt" ftype="ds" arg="">typedearmoire</field>
+                        <label id="QNTJ9" zValue="4" posX="3.175" posY="9.525" width="22.225" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">FILS</label>
+                        <label id="1C8WT" zValue="5" posX="55.562" posY="9.525" width="14.287" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">FP</label>
+                        <label id="T0PAU" zValue="6" posX="73.025" posY="9.525" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">Pi</label>
+                        <label id="AD4CQ" zValue="7" posX="96.837" posY="9.525" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">Qi</label>
+                        <label id="11R2D" zValue="8" posX="120.650" posY="9.525" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">Pu</label>
+                        <label id="QKNCF" zValue="9" posX="144.463" posY="9.525" width="22.225" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">Qu</label>
+                        <label id="8IQTL" zValue="10" posX="28.575" posY="9.525" width="25.400" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold">TYPE</label>
+                        <line id="LJWAO" zValue="12" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="1.587" fromY="7.938" toX="168.275" toY="7.938"/>
+                    </groupheader>
+                    <groupfooter height="7.408">
+                        <line id="ZXVG7" zValue="0" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="55.562" fromY="0.000" toX="166.688" toY="0.000"/>
+                        <label id="KTX70" zValue="1" posX="4.762" posY="11.112" width="22.225" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="1">FILS</label>
+                        <label id="YE2WG" zValue="2" posX="3.175" posY="1.587" width="46.037" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="34">K* ARMOIRE :</label>
+                        <field id="Z8LEE" zValue="3" posX="55.562" posY="1.587" width="14.287" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" type="txt" ftype="ds" arg="">cosphi_p</field>
+                        <field id="AJHJK" zValue="4" posX="73.025" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" type="txt" ftype="ds" arg="">pi_p</field>
+                        <field id="WNDMW" zValue="5" posX="96.837" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" type="txt" ftype="ds" arg="">qi_p</field>
+                        <field id="EVOB1" zValue="6" posX="120.650" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" type="txt" ftype="ds" arg="">pu_p</field>
+                        <field id="8MEMJ" zValue="7" posX="144.463" posY="1.587" width="22.225" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" type="txt" ftype="ds" arg="">qu_p</field>
+                    </groupfooter>
+                </group>
+                <group id="Groupe 1" groupExp="parent" resetVariables="" reprintHeader="false" startsOnNewPage="false"/>
+            </groups>
+        </detail>
+    </details>
+</NCReport>

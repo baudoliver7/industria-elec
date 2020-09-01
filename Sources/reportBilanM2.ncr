@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.10.0" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+    </options>
+    <datasources>
+        <datasource id="cds0" type="custom" openRole="begin" source="static"></datasource>
+        <datasource id="cds1" type="custom" openRole="begin" source="static"></datasource>
+    </datasources>
+    <variables/>
+    <pageheader id="PH" height="22.225">
+        <label id="5ZY4H" zValue="0" posX="3.175" posY="6.350" width="57.679" height="7.673" fontName="Arial" fontSize="18" fontWeight="bold" alignment="1">Bilan de puissance</label>
+        <image id="QNAT2" zValue="1" posX="128.588" posY="-1.587" width="25.400" height="23.812" aspectRatio="keep" format="0" alignment="1">iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAYAAABUx/9/AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAEkhJREFUeJztnXt0FFWexz+dkNAJj04ATQiPBEVNxJBEFwlnXB4+o6tEdI6SI0fBxRPYmcHnjMqyAg7LjnuYAc/oQnacI4wuzOILcY+L4g4Bd5ZEYRNAhYiaBwIJCukMjzR5dO8f3dVU3bpVXd1pTGDv55w+XX3r1q1b9a37u7/7u7cSUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUJxUeCK5aDAK2TTzVQC5OCikABeXFS6ylkX7woq4odjsQMVTCHAVAI8RgJp8kwscc1jadxqp4grCZEyBNbwamA1rUAlLmYDswmwJLS7kgBL8FMLENqv6KP0s9sZWE0BLmaH23+AtSSQAxS6ysOpHu+LFHjcFHb48QAeoO38VVkRK7Ziu+azJ7Am1IpdVOKiFvACNCxnQc5C1u1bTLnHzQyA4yfZEjrUoytGCd9HiNZB85x9mZrkfowRd7R3EHjlfyhesIHGUJJPt1sJ3geI2GeH0Mwz//0Nz4g72zvhuc2ULNhAC+AWPtrxil7GacvWxHID7sXTyZ4ylpLUZNL2fMuB8tfZrsvrk3xr26qF9yJOxDYILWy7JflFkfW/ldi9iK2DZoEosExwEV/kLIrzjdM+O8ytV+NZNp2JmFs6km1FHyLqlr3p76hOSYJUN08/sZFqjIL3+RYcCvXm4CcNF4UAuJgKgJ/HXPPZ04vVO6/EYsYBKMlj9hNQHc/K/CB0swq4W2rTrMLAFwlRi/1VMxvyR1F2eQZ5oSQfxlbd51p3oIKHAEJh3bt7tza9hxOx29CNkxu91OaPoiw5Ee67juyNu2nEWmCfzT4AAhUEdD8bQh+NWgLBiB0uvBCKwQMk0uCaGw7gRGI2MNXOQ9l7iNK3a6nnIo7+Rd2yt9dRe2d+cLv4cjJDYmvIxtbgvLXnhD4aUy0Hh90QqDCkVOq2vQR0D4axTCkFy8JdkuaD+Dgn/EUherRi+1Zspe75UkhJglvzKAHLgIo4zj7fN2yq4ZcranNtFzO4KHAqtiaUG6C9g/qUJMaMHEIx8hYsfl8ILSMNY73FFt4WqGAKkBNatNFAIpVRdCW9TtTjbMB3uJVNAB43KU/dQgbyvvlCEhqC4qYhiRTWPU9peE4f1uJiCbCWbhoCFawMVFwYsf9oxG4jJOAnjef6xzvyBfMZnemT3qR9h9igfXY18E7LSVq1z/GTHI2i/GjQCx0WvGk5i6/MYJ3NsOwx/FQGVlNwnuoVN6Ke4iR0I878lvqUZFyNJ9iZ8yxzQvtlZtyqZXsAAhUhb1tfqXIKkUfnNAwP1MISCoYNDooxIBlfbiaFqUnB3x1duMeP4vaB/YN5j52ESweZC3SVh/t4H8E5e9/eRTydP4oyi/ob8eMlgRxXuTNLFhoOFoY+EBxp1J7PdXwxB1Va26lMSWZaWmq4sjIzHunCrUKraUQh9vItNIJhHl2LgrkBahZRWDiK4QD7DnP0ptzgtuScWrnuhSUUOBYaIIE0XyfbgGnYXHdgNaXA2tD59EwFCFSwJBTJe9fxuR1XMUY+rWctBPvtW68Ot3gNzQxG6susxNaOl5lWu3RtX5o+T9EyHr91FU9/+AWtb9YYhmh69GWmlU9mjSxTtx9OnWW/tNJJFL09n4no5v/1BCpYSQKbIkTqckhgU2ANr9rkiYmYxb57NdVd3cHt56eHFxo6nQQJPxwWfbBMPHFa1Ups6YOxdT9tt73I0jWVliHecN6FtzNl9FBzF3ekjW33/ysFgxYw47UqymWFTBzDM7pzh0UPVPAo8JjlHRFxMTvegscidljQllPBJzx/BPMxiuC4rC5J/rIJTMG69WKRLpt6leW3alXhvDMn8Li4s+UkrSN+wfy3anABaQ++yp5tX7JNzJflYdpTt1CgP//2J5kMrLI4rzUuZtc9z4PEaaVPTEMvbaOmKWjKU5OhYhZTcLa4AV0e/F3mPJ4BZOrzYBbOrkzxvE4fPjfgHj2EjPwR5p3rP+FXCKb+xl/zoqyguwqYqa9L8djgUFWk2w91Lbza+D3vdPnllRo9jDVzbyADi64hGmI24wB3vcS7ZzqC2zfmWq4Zj7WCkR4YWZSuxzxzm/k6TvpAN51r8Amq62kX848cQkkor7vqWcqTE0gX83x/ipo7fsvE3Od4IefvWfqzDZR2dJvr404k5albw10D9EDwHokNUP990JRleSiK4XCpkP5u29ZoJW5Y+FvyyHjtbym/8Uqyhbx2D4UPIC/LvHL26+84ioU/8JuPgtZNzyUDGK7lGT/C/IZMeyc88HvmffgFZwk9OGt20PbkRp6WVezyYcy5t4gMzlmWmASPdujVhjGM6P7z12wal8W01GRYNp2CRZsNDlDEBQ2dfluPXMQH+O64hozCUdaTGwUjKLxvApNmXc+k1jPwk/Ws3PApdU7qc9kwc9quBqp09TEIvnEXdS+XwbCB5/IPcsM1WWQvvIOSlCRzea9V8eiHXwT7fn2ZL1VSd9s4au4cb2w4/RLh4RuY/VYNFUJRUUUnYxlnh8eiAOWv80FpIa0Zg0i//3oeW7SZORjnuLWb5LhiFbOYUTEr+OJBT0lPhZpD1AJnidwtMHqIecfG3dZiA3x2BKZeaTxmdjElN+WGg01hTp2F8tfDXYLJ8bzrZV48/hvWDhlgPC53ODNBGnBxfF97bMYB6pqDDsjYSygKOWp9igPNtOCgfy/OIVtMO34atu6XrocPPzTv7WWneFxhNiWySN2njWxDPtIIp31+xHycvmvA+oG1JS5iL3qXtZ0h5+LaUaZYea/SdJwADp25u8ab637sL0CEm/zVMcOCCwCGe6RROlZ8wCYEccXPs2+zUjxukBvuu46rdHXQj+UdEYvY2oRI+MZ9fJCWBX+kdFcD7zzxJqskFYrZqegpXdAs1Nd34rQ53z2FXDViqNkPOB0cbVj6DwCb95gDNRmDzQecOA3vf0YbFpMuGn/+hkZtlKPnvuvDQzpxds4RMcfGRdbsoHHNjujfzU5KwAekxKseIs2thhUrPsDdegbEPnHYINJyM8z1+PxoeGild+58ADlD8ZTky2e7khLNaR/soxV58MdE43HIE2zD6HSKMTakqHyieIgtc8Z6xMcHYf0uNvi7cSckBm/sgCS8/fvhS0rEt/8oBzbups7icPefnmTxtCuZBtB8ymRiLc24NjOm569Gk7J+DosBrs0hPSEBRqYHV+rYMVhyJz46YHD0bOtS20hr3nDj+HxIKukY77V+ZBSRWMXWP0WOKh8N3x6nVRLDFvtdy7BnKLL1wuI7mbJ5j9STdsy4LBiXZQ6KxEJ3IGyCtWuwHAp+cYwq4HZ9WlYaPDSJiet2hpeCRdW642XGrVp1T8SPxUoYwqRL/4NqgnP2cbE4PaX5pOVqHsP3l7/kj1dcaj4+JQn+4W94dt1OqjG27vPassXKuoVt/b6eEK1Idg9cxLL8AXPasZPw3UlIcIU+Cee2xWP9AfD7g99ifwvwwefSwI5plDDKxo6kp4avRTTnEe93T8TWrycXF+jpOR8rNO2EM0T4ojzWxHt7Ye4fWEJo9YqubL1A+m4iDXAHKviVg+K1MvRl47bxB3SOpSiymx/AjIt9T4/78A5z3yoK1KMHSOY8dUlm3wTCD1HOUDLuvZacX281LKM2RMJsyrBabu0DfA8Wc5V4UF0zfHOM9iNeGnYdplY4j150279n01OxtdZt17Kt0qIhmuMt6/K7WTw0q5gZVi0nIDHj3cGpR8PDfP0Yclb8mPkrfsz8I21w6ATth700bz1A1ft7OdB0IqrrMIh96SC8uxp4Z3cTDZv30PD+Z7QQeQ5erKOUuI2zibFl1x+ncni60etMNnqr+rJE8ykr3y3J4wNoO4PXzkTKGHmu/wzfzI272PPvjwQTszyQ5SEFGHNPEWMoC/bzMm7Oo+Cj/WyXXEu4jiu20rhiK0sxrtCRXaN2bT9In61heBfM5qTxWD8uFTs3E889RcGFj3lZFA/uT9rgVNzZ6YxJTIDMwZDs4EqPtMH4kca0KzMMPx3FE2QxcYCMwRG7CpnjJjunbdjXini1bE1Iq5ColdCRKux7eFJwYuWqDDKzh5KZ0h9v/ojgG6RDB8DgOMXeugO49x+lvWScMYo29hJTVjfgO9Rq7zWfPgsDhCBNeqqlObYSLyZRrYinGYc4vf1RVkx6WbGlNyudYIgH739G1eM3ByNvkXjqTVYPGUja6jLzcuNVH9GaP5L0m3KN6ZOvIO+lbXLzHUIcyoqtWW++rcqwJC6zXhcDXQHcH+2X/9WFn06jVEzbuIu6L741z3YBPP4GFV9/Z06/4xrH1bH12IX9jlFiC3zZYk6bOSH8hwcMTL4q/IJEmPrvg9+VddSI+wb0h+kFjl8TciJ4VMLH24z3Op3dcOIMrf4u3N52GlrPBFvfjoNU+bpwT81l5tQrzOvM/MHlUe4DzSanjB9dDiPT8HzrNZrcGYXGUQRAzaHg97Y6asG8Lm/BjZRt3mMYn8sQYxf6dPG3YzN+wYjt64SjbZDoInD8NFXdfprPdOI90Bycwny9mtqPD3JWd4hsKjHN206mTGyNdVXUTy8w7187h8dvXnlukX/OUDx5mebjd3wVbNHNf6GtpgmKRhv3T7rM+hpbV/HOwGSKve1s+fp7qt7cRdWKrUhsDRBDv92bYvsAd/MpGppOBIMX+w6zv8uPu/4YzV9+RzPAls+pbTphWlYkuzj9Aj49hmhTIqS1tYNH8OI7gzNSvP2/bN/dyJjrhAVKN+XCuz9h5c82sKTpBC1bFrAqJdl8suqvqNKubfkH7H/jEWMXkJoMrzzAo3P/zTj3f28Rnv6J5PRLxDVsILcPG8jtE3Ng0Z20H2ujsvYQVff9zvD+l+we2DrIMf0ngTigvf5jei8LYyBBNrb06n7bIWvZ7kCF/B0ugPWfwAO/Z23+cLL3LnHmlev5+CBMXmF4/Sft6D8zL1MYkLZ3QMEvKT94jBaC1+MFvJ8s5LYJ2aYVpGEOt7F/5C+Ygbmf1r5txe4tB83JEM1qRYfdS33iMh+rdCmaWd53lMbl/+mghjraO2HRJv4JYSi1SeLfpyRD9bNUPHLDOWftvZ9yf9Eoa6HbOwg8uoGZxCg09F7LBgyL3mUv78nEicoh0REWP1Ahf+equS3oE1z7j+FF/74dP2feX491doJXd1Lz8FoqMFond+ZgPAeXMUe2CsbXGQytDuxvXialp8sP63ZSOvcP4aFh1EJD74ttJXQkUw7RCR4u67PFrDrihaZW2N1E/cEWGkLja9OkQuZg+r85jzk/uty+8JD5noeFlSmbwMT1c6N/Y6a9g8D6T7n7sqHk3LjS1F/rvy8YsQ0tAbPwIjEFFJALAWaRxXP5Hipm4s9vY9q4LOPOphPwL9vZ9sKWsBCy7gOA5+7k/qV3OY/+tXfCmu3c/8QbpkCPaYKHC0BsDxEWy2O8ebKwIhHS9Nj17fo8+vPJAhtIjpOdS8zne/RmSpeXUpQq8eL1dHTD0s2UL99iEFrWV2sfR2JLFrz+YFjdsC7ODQn1F9al+4i/u3THy/bp98vOp8+jL1//jS5Pv1D9++k++nOI5XUBvupv+Hx7HfvGj2JSlmSQ6OuEP33JzntX89RbNTQK5evvl3htbjDEGKT0dst26j07mSO3a+1OvHPZtlWXIdYrWqfRN3ks2VePPPdSQv9EfC/+V3iuW3ZOq1CpNhTt0954pP9QIBNaw6kZdyp2pH4byf5oRgpWVszqXLIuSxRYFP0HeUkgVvRLmsDYL2uxYTj/YruR18EOLZ9YZyux9WmiXxDpQZPVyWk9DfR2bFwUXI/VhWKRFildf3OtWrfV8ZEcMlkY18oiOClX9jCJ54ua3hYbzILrn/ZIF2W3X2/WxEWRsjKcmHJ9vWQjBCvBRfGsRgHREpWv0BfEhuhWuMSyGkZ2jL6Va7/BujWJlkH2UMoE15/L6oFDSJeNpe0sh6N70lfEFjmff9w2Wmshtmb9dqSWLea1a8FOHh47vyAivemN9xb6UQCSbStEh9HOk5a1Pivn0Gl5dqL3+QhabxLNHwaQPRRWD4dMcP2xToeAdt1CVMMtPf9fxY4G8cFw4plryJZYW4lsNW7Xb0fdmvUosaMnklWwE8EqkKT/1rDrFmLyaZTYvYPoNzjpFqCHjqsSu3dx6jtcKP96Q6FQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQR+D/iCTOl6RyVtgAAAABJRU5ErkJggg==</image>
+    </pageheader>
+    <pagefooter id="PF" height="8.202">
+        <label id="N4SFS" zValue="0" posX="1.587" posY="1.587" width="47.625" height="4.762" fontName="Arial" fontSize="10" alignment="1">Industria Elec 2013</label>
+        <field id="IA5MB" zValue="1" posX="158.750" posY="1.587" width="6.350" height="4.762" fontName="Arial" fontSize="10" alignment="1" type="txt" ftype="sys" arg="">pageno</field>
+        <field id="XYM9V" zValue="2" posX="50.800" posY="1.587" width="33.337" height="4.762" fontName="Arial" fontSize="10" alignment="1" type="date" ftype="sys" dateFormat="dd/MM/yyyy" arg="">date</field>
+        <label id="OJN9I" zValue="4" posX="149.225" posY="1.587" width="9.525" height="4.762" fontName="Arial" fontSize="10" alignment="1">Page</label>
+    </pagefooter>
+    <details>
+        <detail id="Detail1" height="7.938" datasource="cds0">
+            <items>
+                <field id="XAE8E" zValue="0" posX="4.762" posY="1.587" width="23.812" height="4.762" fontName="Arial" fontSize="10" alignment="1" type="txt" ftype="ds" arg="">designation</field>
+                <field id="V5UBE" zValue="1" posX="30.162" posY="1.587" width="39.688" height="4.762" fontName="Arial" fontSize="10" alignment="1" type="txt" ftype="ds" arg="">type</field>
+                <field id="PHMQC" zValue="2" posX="73.025" posY="1.587" width="14.287" height="4.762" fontName="Arial" fontSize="10" alignment="36" type="num" ftype="ds" arg="">cosphi</field>
+                <field id="Q0ZPQ" zValue="3" posX="90.487" posY="1.587" width="15.875" height="4.762" fontName="Arial" fontSize="10" alignment="36" type="num" ftype="ds" arg="">pi</field>
+                <field id="Z1U5P" zValue="4" posX="109.537" posY="1.587" width="15.875" height="4.762" fontName="Arial" fontSize="10" alignment="36" type="num" ftype="ds" arg="">qi</field>
+                <field id="EZ4KH" zValue="5" posX="128.588" posY="1.587" width="15.875" height="4.762" fontName="Arial" fontSize="10" alignment="36" type="num" ftype="ds" arg="">pu</field>
+                <field id="6KHVE" zValue="6" posX="147.637" posY="1.587" width="17.462" height="4.762" fontName="Arial" fontSize="10" alignment="36" type="num" ftype="ds" arg="">qu</field>
+                <line id="W2H5Q" zValue="7" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="1.587" fromY="0.000" toX="166.688" toY="0.000"/>
+            </items>
+            <groups>
+                <group id="Groupe 0" groupExp="designationdeparent" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader id="GH_Groupe 0" height="15.875">
+                        <rectangle id="O0XO1" zValue="0" posX="1.587" posY="0.000" width="165.100" height="7.938" lineColor="#000000" lineStyle="nopen" lineWidth="0.100" fillStyle="solid" fillColor="#ffaa00"/>
+                        <rectangle id="1IHJU" zValue="1" posX="1.587" posY="7.938" width="165.100" height="7.938" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#55ff00"/>
+                        <label id="4J1DD" zValue="2" posX="4.762" posY="1.587" width="20.637" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="1">ARMOIRE : </label>
+                        <label id="UPDBL" zValue="3" posX="77.787" posY="1.587" width="12.700" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="1">TYPE : </label>
+                        <field id="4QD8A" zValue="4" posX="28.575" posY="1.587" width="46.037" height="4.762" fontName="Arial" fontSize="10" alignment="1" type="txt" ftype="ds" arg="">designationdeparent</field>
+                        <field id="ZU61W" zValue="5" posX="92.075" posY="1.587" width="74.612" height="4.762" fontName="Arial" fontSize="10" alignment="1" type="txt" ftype="ds" arg="">typedeparent</field>
+                        <label id="QNTJ9" zValue="6" posX="4.762" posY="9.525" width="23.812" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="1">COMPOSANT</label>
+                        <label id="1C8WT" zValue="7" posX="73.025" posY="9.525" width="14.287" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36">Cos phi</label>
+                        <label id="T0PAU" zValue="8" posX="90.487" posY="9.525" width="15.875" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36">Pi (kW)</label>
+                        <label id="AD4CQ" zValue="9" posX="109.537" posY="9.525" width="15.875" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36">Qi (kVAR)</label>
+                        <label id="11R2D" zValue="10" posX="128.588" posY="9.525" width="15.875" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36">Pu (kW)</label>
+                        <label id="QKNCF" zValue="11" posX="147.637" posY="9.525" width="17.462" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36">Qu (kVAR)</label>
+                        <label id="8IQTL" zValue="12" posX="30.162" posY="9.525" width="39.688" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="1">TYPE</label>
+                        <line id="O8JZK" zValue="13" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="1.587" fromY="0.000" toX="166.688" toY="0.000"/>
+                        <line id="TDER1" zValue="14" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="1.587" fromY="0.000" toX="1.587" toY="15.875"/>
+                        <line id="XFV3A" zValue="15" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="166.688" fromY="0.000" toX="166.688" toY="15.875"/>
+                    </groupheader>
+                    <groupfooter id="GF_Groupe 0" height="12.435">
+                        <rectangle id="9OFC4" zValue="0" posX="42.862" posY="0.000" width="123.825" height="7.938" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#55aaff"/>
+                        <label id="YE2WG" zValue="1" posX="46.037" posY="1.587" width="23.812" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="34">K* ARMOIRE :</label>
+                        <field id="Z8LEE" zValue="2" posX="73.025" posY="1.587" width="14.287" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36" type="num" ftype="ds" arg="">cosphi_p</field>
+                        <field id="AJHJK" zValue="3" posX="90.487" posY="1.587" width="15.875" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36" type="num" ftype="ds" arg="">pi_p</field>
+                        <field id="WNDMW" zValue="4" posX="109.537" posY="1.587" width="15.875" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36" type="num" ftype="ds" arg="">qi_p</field>
+                        <field id="EVOB1" zValue="5" posX="128.588" posY="1.587" width="15.875" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36" type="num" ftype="ds" arg="">pu_p</field>
+                        <field id="8MEMJ" zValue="6" posX="147.637" posY="1.587" width="17.462" height="4.762" fontName="Arial" fontSize="10" fontWeight="bold" alignment="36" type="num" ftype="ds" arg="">qu_p</field>
+                        <line id="ZW0UU" zValue="7" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="166.688" fromY="0.000" toX="1.587" toY="0.000"/>
+                    </groupfooter>
+                </group>
+            </groups>
+        </detail>
+    </details>
+</NCReport>

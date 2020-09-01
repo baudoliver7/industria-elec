@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Industria Elec 2013</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/logo.png</normaloff>:/images/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>783</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <widget class="QMenu" name="menuNouveau">
+     <property name="title">
+      <string>Nouveau bilan de puissance</string>
+     </property>
+     <addaction name="actionMethodeUsuelle"/>
+     <addaction name="actionMethodeIndustrielle"/>
+    </widget>
+    <addaction name="menuNouveau"/>
+    <addaction name="actionOuvrirUnFichier"/>
+    <addaction name="separator"/>
+    <addaction name="actionEnregistrer"/>
+    <addaction name="actionEnregistrerSous"/>
+    <addaction name="separator"/>
+    <addaction name="actionFermerFichierEnCours"/>
+    <addaction name="separator"/>
+    <addaction name="actionApercu_avant_impression"/>
+    <addaction name="actionImprimerInstallation"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionAllerEnAvant"/>
+    <addaction name="actionAllerEnArriere"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopier"/>
+    <addaction name="actionCouper"/>
+    <addaction name="actionColler"/>
+    <addaction name="actionSupprimer"/>
+    <addaction name="separator"/>
+    <addaction name="actionEditer"/>
+    <addaction name="separator"/>
+    <addaction name="actionZoomPlus"/>
+    <addaction name="actionZoomMoins"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Fenêtre</string>
+    </property>
+    <addaction name="actionProprietesDesCpts"/>
+    <addaction name="actionPage_demarrage"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionAideSurIndustriaElec"/>
+    <addaction name="separator"/>
+    <addaction name="actionApropos"/>
+   </widget>
+   <widget class="QMenu" name="menuParametres">
+    <property name="title">
+     <string>Paramètres</string>
+    </property>
+    <addaction name="actionD_finir_extension"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuParametres"/>
+   <addaction name="menuAffichage"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionTableau_secondaire"/>
+   <addaction name="actionTableau_divisionnaire"/>
+   <addaction name="actionTerminal"/>
+   <addaction name="actionRecepteur_simple"/>
+   <addaction name="actionEclairage"/>
+   <addaction name="actionChauffage"/>
+   <addaction name="actionConditionneur_air"/>
+   <addaction name="actionForce_motrice"/>
+   <addaction name="actionPrise_de_courant"/>
+   <addaction name="actionLocal"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMethodeUsuelle"/>
+   <addaction name="actionMethodeIndustrielle"/>
+   <addaction name="actionOuvrirUnFichier"/>
+   <addaction name="actionEnregistrer"/>
+   <addaction name="actionApercu_avant_impression"/>
+   <addaction name="separator"/>
+   <addaction name="actionAllerEnArriere"/>
+   <addaction name="actionAllerEnAvant"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoomMoins"/>
+   <addaction name="actionZoomPlus"/>
+   <addaction name="separator"/>
+   <addaction name="actionD_finir_extension"/>
+   <addaction name="actionProprietesDesCpts"/>
+   <addaction name="separator"/>
+   <addaction name="actionAideSurIndustriaElec"/>
+  </widget>
+  <action name="actionProprietesDesCpts">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/proprietes_composant.png</normaloff>:/images/proprietes_composant.png</iconset>
+   </property>
+   <property name="text">
+    <string>Propriétés des composants</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionCopier">
+   <property name="text">
+    <string>Copier</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionColler">
+   <property name="text">
+    <string>Coller</string>
+   </property>
+   <property name="toolTip">
+    <string>Coller le composant copié</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionZoomPlus">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/zoom plus.png</normaloff>:/images/zoom plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agrandir l'installation</string>
+   </property>
+   <property name="toolTip">
+    <string>Agrandir l'installation</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionZoomMoins">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/zoom moins.png</normaloff>:/images/zoom moins.png</iconset>
+   </property>
+   <property name="text">
+    <string>Réduire l'installation</string>
+   </property>
+   <property name="toolTip">
+    <string>Réduire l'installation</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionCouper">
+   <property name="text">
+    <string>Couper</string>
+   </property>
+   <property name="toolTip">
+    <string>Couper le composant sélectionné</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+   <property name="toolTip">
+    <string>Supprimer le composant sélectionné</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionEditer">
+   <property name="text">
+    <string>Editer</string>
+   </property>
+   <property name="toolTip">
+    <string>Editer le composant sélectionné</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionMethodeUsuelle">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/new_mt.png</normaloff>:/images/new_mt.png</iconset>
+   </property>
+   <property name="text">
+    <string>Par la méthode théorique</string>
+   </property>
+   <property name="toolTip">
+    <string>Nouveau bilan de puissance avec la méthode théorique</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionMethodeIndustrielle">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/new_mi.png</normaloff>:/images/new_mi.png</iconset>
+   </property>
+   <property name="text">
+    <string>Par la méthode industrielle</string>
+   </property>
+   <property name="toolTip">
+    <string>Nouveau bilan de puissance avec la méthode industrielle</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionOuvrirUnFichier">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/open_2.png</normaloff>:/images/open_2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir un fichier</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionImprimerInstallation">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/print.png</normaloff>:/images/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Imprimer...</string>
+   </property>
+  </action>
+  <action name="actionFermerFichierEnCours">
+   <property name="text">
+    <string>Fermer fichier en cours</string>
+   </property>
+   <property name="toolTip">
+    <string>Fermer le fichier en cours</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="toolTip">
+    <string>Quitter l'application</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionEnregistrerSous">
+   <property name="text">
+    <string>Enregistrer sous...</string>
+   </property>
+  </action>
+  <action name="actionD_finir_extension">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/transfo_choisi.png</normaloff>:/images/transfo_choisi.png</iconset>
+   </property>
+   <property name="text">
+    <string>Transformateur</string>
+   </property>
+  </action>
+  <action name="actionAideSurIndustriaElec">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/aide.png</normaloff>:/images/aide.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aide sur Industria Elec</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionApropos">
+   <property name="text">
+    <string>A propos de Industria Elec...</string>
+   </property>
+   <property name="toolTip">
+    <string>A propos de Industria Elec</string>
+   </property>
+  </action>
+  <action name="actionAllerEnAvant">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/redo.png</normaloff>:/images/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aller en avant</string>
+   </property>
+   <property name="toolTip">
+    <string>Aller en avant</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionAllerEnArriere">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/undo.png</normaloff>:/images/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aller en arrière</string>
+   </property>
+   <property name="toolTip">
+    <string>Aller en arrière</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionPage_demarrage">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/new_mi.png</normaloff>:/images/new_mi.png</iconset>
+   </property>
+   <property name="text">
+    <string>Page de démarrage</string>
+   </property>
+  </action>
+  <action name="actionTransformateur">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/transfo_choisi.png</normaloff>:/images/transfo_choisi.png</iconset>
+   </property>
+   <property name="text">
+    <string>Transformateur</string>
+   </property>
+  </action>
+  <action name="actionTGBT">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/TGBT.png</normaloff>:/images/TGBT.png</iconset>
+   </property>
+   <property name="text">
+    <string>TGBT</string>
+   </property>
+  </action>
+  <action name="actionTableau_secondaire">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/ts_icon.png</normaloff>:/images/ts_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tableau secondaire</string>
+   </property>
+  </action>
+  <action name="actionTableau_divisionnaire">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/td_icon.png</normaloff>:/images/td_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tableau divisionnaire</string>
+   </property>
+  </action>
+  <action name="actionTerminal">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/ter_icon.png</normaloff>:/images/ter_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Terminal</string>
+   </property>
+  </action>
+  <action name="actionRecepteur_simple">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/autre récepteur.png</normaloff>:/images/autre récepteur.png</iconset>
+   </property>
+   <property name="text">
+    <string>Récepteur simple</string>
+   </property>
+  </action>
+  <action name="actionEclairage">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/eclairage.png</normaloff>:/images/eclairage.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eclairage</string>
+   </property>
+  </action>
+  <action name="actionChauffage">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Chauffage.png</normaloff>:/images/Chauffage.png</iconset>
+   </property>
+   <property name="text">
+    <string>Chauffage</string>
+   </property>
+  </action>
+  <action name="actionConditionneur_air">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/climatiseur.png</normaloff>:/images/climatiseur.png</iconset>
+   </property>
+   <property name="text">
+    <string>Conditionneur d'air</string>
+   </property>
+  </action>
+  <action name="actionForce_motrice">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/moteur.png</normaloff>:/images/moteur.png</iconset>
+   </property>
+   <property name="text">
+    <string>Force motrice</string>
+   </property>
+  </action>
+  <action name="actionPrise_de_courant">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/prise de courant.png</normaloff>:/images/prise de courant.png</iconset>
+   </property>
+   <property name="text">
+    <string>Prise de courant</string>
+   </property>
+  </action>
+  <action name="actionLocal">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Local_ecl.png</normaloff>:/images/Local_ecl.png</iconset>
+   </property>
+   <property name="text">
+    <string>Local</string>
+   </property>
+  </action>
+  <action name="actionFleche">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/fleche.PNG</normaloff>:/images/fleche.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Flèche</string>
+   </property>
+   <property name="toolTip">
+    <string>Flèche</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionCable">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/liaison.png</normaloff>:/images/liaison.png</iconset>
+   </property>
+   <property name="text">
+    <string>Câble</string>
+   </property>
+   <property name="toolTip">
+    <string>Câble</string>
+   </property>
+  </action>
+  <action name="actionGomme">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/gomme.png</normaloff>:/images/gomme.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gomme</string>
+   </property>
+   <property name="toolTip">
+    <string>Gomme</string>
+   </property>
+  </action>
+  <action name="actionApercu_avant_impression">
+   <property name="icon">
+    <iconset resource="boutons.qrc">
+     <normaloff>:/images/print_preview.png</normaloff>:/images/print_preview.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aperçu avant impression</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="boutons.qrc"/>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

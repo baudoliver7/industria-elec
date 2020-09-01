@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Faire un bilan de puissance par la méthode théorique</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffcc99;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ color: #a0a0a0;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
+ color: #696969;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-weight: bold;
+ color: #a0a0a0;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-style: italic;
+ color: #a0a0a0;
+}
+span.rvts10
+{
+ font-size: 12pt;
+}
+span.rvts11
+{
+ font-size: 12pt;
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 12pt;
+ color: #0000ff;
+}
+span.rvts13
+{
+ font-size: 12pt;
+ color: #008000;
+}
+span.rvts14
+{
+ font-size: 12pt;
+ color: #000000;
+}
+span.rvts15
+{
+ font-size: 12pt;
+ color: #000000;
+ background-color: #ffcc99;
+}
+span.rvts16 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts17 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts18 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts19 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts20 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts21 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts22 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts23, span.rvts23 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts24 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts25, span.rvts25 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts26 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts27, span.rvts27 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts28 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts29, span.rvts29 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts30 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts31, span.rvts31 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts32 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts33 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts34 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts35 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts36 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts37 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts38 /* Font Style */
+{
+ font-size: 16pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ color: #ffffff;
+}
+span.rvts39 /* Font Style */
+{
+ font-family: 'MS Sans Serif', 'Geneva', sans-serif;
+ color: #808080;
+}
+span.rvts40 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts41, span.rvts41 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ text-align: justify;
+}
+.rvps3
+{
+ margin: 0px 0px 0px 24px;
+}
+.rvps4
+{
+ text-align: center;
+ margin: 0px 0px 0px 24px;
+}
+.rvps5
+{
+ margin: 0px 0px 0px 48px;
+}
+.rvps6
+{
+ text-align: center;
+ margin: 0px 0px 0px 48px;
+}
+.rvps7 /* Heading Title */
+{
+ text-align: center;
+ text-indent: 0px;
+ line-height: 1.50;
+ padding: 0px 0px 0px 0px;
+ margin: 250px 0px 0px 0px;
+}
+.rvps8 /* Heading1 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps9 /* Heading2 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps10 /* Heading3 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps11 /* Heading4 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps12 /* Heading5 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps13 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps14 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps15 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps16 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps17 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps18 /* Heading Title */
+{
+ text-align: center;
+ text-indent: 0px;
+ line-height: 1.50;
+ padding: 0px 0px 0px 0px;
+ margin: 250px 0px 0px 0px;
+}
+.rvps19 /* Heading1 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps20 /* Heading2 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps21 /* Heading3 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps22 /* Heading4 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps23 /* Heading5 */
+{
+ text-align: left;
+ text-indent: 0px;
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0px 0px 0px 0px;
+ margin: 20px 0px 10px 0px;
+}
+.rvps24 /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ background: #9fbed0;
+ padding: 5px 5px 2px 5px;
+ margin: -5px -5px 18px -5px;
+}
+.rvps25 /* Paragraph Style */
+{
+ text-align: center;
+ background: #e4e4e4;
+ margin: 20px 0px 0px 0px;
+}
+.rvps26 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<link rel="StyleSheet" href="hnd.css" type="text/css"/>
+<script type="text/javascript">if(top.frames.length == 0) { sTopic = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length); top.location.href="../aide d\'industria elec.htm?" + sTopic; }</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="hnd.js"></script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+<h1 class=rvps24><span class=rvts0><span class=rvts38>Faire un bilan de puissance par la méthode théorique</span></span></h1>
+<p><span class=rvts11>Créer un nouveau fichier</span></p>
+<p class=rvps2><span class=rvts10>Faire un bilan de puissance par la méthode théorique nécessite la connaissance du schéma électrique, des conditions d'emploi du matériel et des conditions d'exploitation de l'installation. Pour se faire, on créé un nouveau fichier d'extention </span><span class=rvts11>*.ieu</span><span class=rvts10>. Aller dans </span><span class=rvts12>Fichier -&gt; Nouveau bilan de puissance</span><span class=rvts13>, </span><span class=rvts14>puis cliquer sur</span><span class=rvts13> </span><span class=rvts12>Par la méthode théorique</span><span class=rvts14>,</span><span class=rvts13> </span><span class=rvts14>ou faire simplement la combinaison</span><span class=rvts15> </span><span class=rvts12>Ctrl + T </span><span class=rvts10>:</span></p>
+<p><br></p>
+<p class=rvps1><img border=0 width=462 height=167 alt="" hspace=1 vspace=1 src="img_2.png"> </p>
+<p><br></p>
+<p><span class=rvts10>Il apparaît à l'écran la figure : </span></p>
+<p><span class=rvts10><br></span></p>
+<p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_3.png"></p>
+<p><span class=rvts10><br></span></p>
+<p><span class=rvts11>Ajouter un nouveau composant à l'installation</span></p>
+<p><span class=rvts10>Pour ajouter un nouveau composant à l'installation, il suffit de :</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3 style="margin-left: 0"><span class=rvts10>Sélectionner le tableau sur lequel on désire brancher le nouveau composant, puis faire un click droit;</span></li>
+</ul></ul>
+<p class=rvps3><span class=rvts10><br></span></p>
+<p class=rvps4><img border=0 alt="" hspace=1 vspace=1 src="img_4.png"></p>
+<p class=rvps4><span class=rvts10><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps3 style="margin-left: 0"><span class=rvts10>Dans le menu contextuel, sélectionner </span><span class=rvts12>Ajouter...</span><span class=rvts10>, puis le type du composant et enfin, le nombre d'occurrences de ce type ; </span></li>
+</ul></ul>
+<p class=rvps3><span class=rvts10><br></span></p>
+<p class=rvps4><img border=0 alt="" hspace=1 vspace=1 src="img_5.png"></p>
+<p class=rvps4><span class=rvts10><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;"><ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;">
+<li class=rvps5 style="margin-left: 0"><span class=rvts10>Après un click sur le nombre d'occurrences, il apparaît une boîte de dialogue permettant de renseigner les paramètres de chaque composant. Après avoir renseigner chaque occurrence, cliquer sur le bouton </span><span class=rvts12>OK</span><span class=rvts10> :</span></li>
+</ul></ul>
+<p class=rvps5><span class=rvts10><br></span></p>
+<p class=rvps6><img border=0 alt="" hspace=1 vspace=1 src="img_6.png"></p>
+<p class=rvps6><span class=rvts10><br></span></p>
+<p><span class=rvts11>Editer les propriétés d'un composant</span></p>
+<p class=rvps2><span class=rvts10>Pour éditer les propriétés d'un composant, cliquer sur </span><span class=rvts12>Propriétés des composants</span><span class=rvts10> dans le menu </span><span class=rvts12>Fenêtre</span><span class=rvts10> ou plus simplement faire </span><span class=rvts12>Ctrl + P</span><span class=rvts10> pour afficher la fiche de propriété (si elle n'est pas encore ouverte), puis sélectionner le composant.</span></p>
+<p class=rvps2><span class=rvts10><br></span></p>
+<p class=rvps1><img border=0 alt="" hspace=1 vspace=1 src="img_7.png"></p>
+<p class=rvps25><span class=rvts39>Copyright © 2011 - 2012, Industria Elec, Tous droits réservés</span></p>
+<p class=rvps26><span class=rvts40>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts41 href="http://www.helpndoc.com" target="_blank">Single source CHM, PDF, DOC and HTML Help creation</a></p>
+</body></html>
